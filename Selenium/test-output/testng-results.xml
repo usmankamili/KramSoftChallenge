@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-25T11:51:56 IST" name="Suite" finished-at="2022-02-25T11:57:56 IST" duration-ms="360060">
+    <groups>
+    </groups>
+    <test started-at="2022-02-25T11:51:56 IST" name="Test" finished-at="2022-02-25T11:57:56 IST" duration-ms="360060">
+      <class name="Assignment.Selenium.Demo">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Assignment.Selenium.Demo@1da2cb77]" started-at="2022-02-25T11:51:56 IST" name="setup" finished-at="2022-02-25T11:51:58 IST" duration-ms="1464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testRegistration()[pri:1, instance:Assignment.Selenium.Demo@1da2cb77]" started-at="2022-02-25T11:51:58 IST" name="testRegistration" finished-at="2022-02-25T11:54:14 IST" duration-ms="136917" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Assignment.Selenium.Demo@1da2cb77]" started-at="2022-02-25T11:54:14 IST" name="tearDown" finished-at="2022-02-25T11:54:15 IST" duration-ms="163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Assignment.Selenium.Demo@1da2cb77]" started-at="2022-02-25T11:54:15 IST" name="setup" finished-at="2022-02-25T11:54:15 IST" duration-ms="820" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLogin()[pri:2, instance:Assignment.Selenium.Demo@1da2cb77]" started-at="2022-02-25T11:54:15 IST" name="testLogin" finished-at="2022-02-25T11:55:52 IST" depends-on-methods="Assignment.Selenium.Demo.testRegistration" duration-ms="96840" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Assignment.Selenium.Demo@1da2cb77]" started-at="2022-02-25T11:55:52 IST" name="tearDown" finished-at="2022-02-25T11:55:53 IST" duration-ms="216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Assignment.Selenium.Demo@1da2cb77]" started-at="2022-02-25T11:55:53 IST" name="setup" finished-at="2022-02-25T11:55:53 IST" duration-ms="770" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testProfileModifications()[pri:3, instance:Assignment.Selenium.Demo@1da2cb77]" started-at="2022-02-25T11:55:53 IST" name="testProfileModifications" finished-at="2022-02-25T11:57:42 IST" depends-on-methods="Assignment.Selenium.Demo.testLogin" duration-ms="108483" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [nscsio lxiwnx] but found [dqbozx qrcozw]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [nscsio lxiwnx] but found [dqbozx qrcozw]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at Assignment.Selenium.Demo.testProfileModifications(Demo.java:110)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProfileModifications -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Assignment.Selenium.Demo@1da2cb77]" started-at="2022-02-25T11:57:42 IST" name="tearDown" finished-at="2022-02-25T11:57:42 IST" duration-ms="224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Assignment.Selenium.Demo -->
+      <class name="Assignment.Selenium.DemoApi">
+        <test-method signature="getRequest()[pri:0, instance:Assignment.Selenium.DemoApi@316bcf94]" started-at="2022-02-25T11:57:42 IST" name="getRequest" finished-at="2022-02-25T11:57:56 IST" duration-ms="14117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRequest -->
+      </class> <!-- Assignment.Selenium.DemoApi -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
